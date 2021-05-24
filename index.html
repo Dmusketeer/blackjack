@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <meta name=viewport
+        content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#003c00">
+    <title>Blackjack</title>
+</head>
+
+<body>
+    <!-- backdrop to lock the table -->
+    <div id="backdrop"></div>
+    <!-- banner to start game and for status messages -->
+    <div id="banner">
+        <div id="welcome-cards" class="cards">
+            <div class="card hidden"></div>
+            <div class="card heart ace"></div>
+        </div>
+        <h2 id="banner-title">Welcome to Blackjack</h2>
+        <p id="banner-text">
+            by Dheeraj Tiwari<br>
+            <br>
+        </p>
+        <button id="new-button">New Game</button>
+    </div>
+    <!-- gambling table with cards and buttons -->
+    <div id="gambling-table" class="hidden">
+        <div id="dealer-area">
+            <h2>Dealer</h2>
+            <div id="dealer-cards" class="cards"></div>
+            <p id="dealer-score" class="score"></p>
+        </div>
+        <div id="player-area">
+            <div id="player-cards" class="cards"></div>
+            <p id="player-score" class="score"></p>
+            <h2>Player</h2>
+        </div>
+        <div id="button-area">
+            <button id="hit-button">Hit</button>
+            <button id="stand-button">Stand</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
